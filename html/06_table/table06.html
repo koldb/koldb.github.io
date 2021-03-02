@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+          <style>
+        table,th,td {
+            border: 1px solid green;
+            border-collapse: collapse
+        }
+        th,td {
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+   <h2>html5 table</h2>
+   
+   <table width="100%" summary="월별 스마트폰, 태블릿, 데스크탑 판매현황">
+       <caption>상품에 따른 월별 판매현황</caption>
+       <colgroup>
+           <col width="40%">
+           <col width="20%">
+           <col width="20%">
+           <col width="20%">
+       </colgroup>
+       <thead>
+           <tr>
+               <th rowspan="2" scope="col"></th>
+               <th colspan="3" scope="colgroup">상품종류</th>
+           </tr>
+           <tr>
+               <th>스마트폰</th>
+               <th>태블릿</th>
+               <th>데스크탑</th>
+           </tr>
+           
+        <!--thead, tbody, tfoot 순서이나 작성 순서는 상관없음-->   
+       </thead>
+       <tfoot>
+           <th scope="row">합계</th>
+           <td>710,000</td>
+           <td>150,000</td>
+           <td>230,000</td>
+       </tfoot>
+       <tbody>
+           <tr>
+               <th scope="row">1월</th>
+               <td>500,000</td>
+               <td>50,000</td>
+               <td>800,000</td>
+               
+           </tr>
+             <tr>
+               <th scope="row">2월</th>
+               <td>500,000</td>
+               <td>50,000</td>
+               <td>800,000</td>
+               
+           </tr>
+             <tr>
+               <th scope="row">3월</th>
+               <td>500,000</td>
+               <td>50,000</td>
+               <td>800,000</td>
+               
+           </tr>
+           
+       </tbody>
+       <!--scope : 읽어주는 방향을 말함 
+       row : 행
+       col : (columm) 열-->
+       
+   </table>    
+       
+</body>
+</html>

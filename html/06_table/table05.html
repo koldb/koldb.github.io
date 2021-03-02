@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+      <style>
+        table,th,td {
+            border: 1px solid green;
+            border-collapse: collapse
+        }
+        th,td {
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+   <h2>Rowspan &amp; Colspan</h2>
+   
+    <!--table>(tr>th*3)+(tr*2>td*3)  th 3개 이후 tr 3줄로 만드는 법-->
+   
+   <p>표의 cell을 가로 혹은 세로로 확장할 때 사용</p>
+   <table>
+       <tr>
+           <th>FirstName</th>
+           <th>LastName</th>
+           <th>Age</th>
+       </tr>
+       <tr>
+           <td rowspan="2">Bill</td>
+           <td>Clinton</td>
+           <td rowspan="3">45</td>
+       </tr>
+       <tr>
+           
+           <td>Fonda</td>
+           
+       </tr>
+       <tr>
+           <td colspan="2">Lee</td>
+          
+         
+       </tr>
+   </table>
+   <!--확장할때는 합쳐질 칸은 지워야한다. 안그러면 칸이 살아있는 상태로 밀려남-->
+   
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+</body>
+</html>

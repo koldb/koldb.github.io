@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--External Style Sheet-->
+    <link rel="stylesheet" href="style.css" type="text/css"> <!--type은 옛날에 많이 썻음-->
+  
+    
+     <!--Internal Style Sheet-->
+    <style>
+        h2{padding: 20px; background-color: lightcoral; color: black}
+    </style>
+    
+    
+    
+</head>
+<body>
+   <h2 style="color: brown">How to use CSS</h2>
+   <p>css를 사용하는 방법은 3가지가 있습니다.</p>
+    
+<!--CSS 들은 덮여쓰여지는게 된다 그래서 계단식이라 불리며 밑에밑에 쓰는 애들이 최종적으로 적용된다-->   
+   <ul>
+       <li>External Style Sheet : 외부에 만들어놓고 링크 걸어 사용 / 가장 먼저 적용</li>
+       <li style="background-color: gold">Internal Style Sheet : 타이틀 밑에 쓰는 style 이 인터널 스타일 / 
+       external 이후 적용된다 -> 하지만 2번째로 들어간다고 적용 안되지 않고 또 적용이 된다/
+       덮어쓰여진다</li> 
+       <li>Inline Style : 적용 순위가 가장 높다 </li>
+   </ul>
+   
+   
+    
+</body>
+</html>

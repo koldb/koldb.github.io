@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: black
+        }
+
+        legend {
+            text-align: center;
+            background-color: gray;
+            color: aliceblue
+        }
+
+        fieldset {
+            border-color: brown;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+   <div style="background-color: gold">
+    <h2 style="color: black"> <u>회원 가입</u></h2>
+    </div>
+    <form action="" method="">
+        <fieldset>
+            <legend>회원가입</legend>
+
+            <ul type="circle">
+                <li><label for="Name">Name :</label>
+                    <input type="text" name="Name" id="Name" autofocus>
+                </li>
+                <li><label for="Password">Password :</label>
+                    <input type="password" name="Password" id="Password" placeholder="숫자, 문자 포함 6자 이상 12자 이하" title="숫자, 문자 포함 6자 이상 12자 이하" pattern="/^[A-Za-z0-9]{6,12}$/;" required>
+
+                </li>
+                <li>
+                    <label for="Tel">Tel :</label>
+                    <input type="tel" name="Tel" id="Tel" placeholder="000-(1)111-2222" title="전화번호는 3-4-4 형식이여야 합니다" pattern="\d{3}-\d{3,4}-\d{4}">
+                </li>
+
+            </ul>
+
+        </fieldset>
+        <fieldset>
+               <legend>성별 선택</legend>
+                <select name="gender" id="gender" size="2" multiple>
+            <option value="남성">남성</option>
+            <option value="여성">여성</option>
+           
+            
+
+        </select>
+          
+            
+        </fieldset>
+            
+        <fieldset>
+            <legend>나이 선택</legend>
+        
+        <input type="range" name="range" min="0" max="10" step="2">
+         <output name="x" for= "range"></output>
+        </fieldset>
+        
+        
+        
+        <fieldset>
+            <legend>나이 선택</legend>
+            <input list="browsers" >
+            <datalist id="browsers">
+                <option value="남성"></option>
+                <option value="여성"></option>
+
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>회원 가입 사유</legend>
+            <input type="checkbox" name="why" value="why" id="권유">
+            <label for="권유">권유</label>
+            <input type="checkbox" name="why" value="why" id="인터넷 검색">
+            <label for="인터넷 검색">인터넷 검색</label>
+            <input type="checkbox" name="why" value="why" id="블로그">
+            <label for="블로그">블로그</label>
+            <input type="checkbox" name="why" value="why" id="교재">
+            <label for="교재">교재</label>
+        </fieldset>
+
+   <br>
+    <input type="submit" value="가입">
+
+    </form>
+
+
+    <hr>
+    <br>
+    
+ <iframe width="300" height="200" src="https://www.youtube.com/embed/6MyHdz_MW3Y" frameborder="50" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" name="ad" id="ad" allowfullscreen></iframe>
+
+    <input type="button" onclick="erase()" value="광고 제거">
+    <input type="button" onclick="appear()" value="광고 보기">
+    <script>
+     
+
+        function erase() {
+           var x = document.getElementById("ad");
+            x.style.display = "none";
+        }
+        
+        function appear() {
+             var x = document.getElementById("ad");
+            x.style.display = "block";
+        }
+        
+    </script>    
+
+
+
+
+  <address>영등포구</address>
+    <address>&copy;best web company, &copy;copyright reserved <a href="http://www.ydp.go.kr">www.ydp.go.kr</a> </address>
+
+
+
+</body>
+
+
+</html>
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /*gradient(direction, 1st color, 2nd color,...)
+        direction default: top to bottom*/
+        body{margin: 0px}
+        div{margin-bottom: 20px; height: 100px;}
+        #linear{background: linear-gradient(skyblue, blue)}
+        #toRight{background: linear-gradient(to right, pink, red); height: 100px;}
+       #multi{background: linear-gradient(white, pink, orange, red, skyblue, blue); height: 100px;}
+       #angle{background: linear-gradient(150deg, white, pink, orange, red); height: 100px;}
+        #circle{background: radial-gradient(red, orange, yellow, green, blue, navy, violet); height: 100px}
+        #rainbow{background: linear-gradient(red, orange, yellow, green, blue, navy, violet); height: 100px}
+        #trans{background: linear-gradient(to right, rgba(255,0,0,0.1), rgba(255,0,0,1)); height: 100px;}
+        /*trans 가장 약한거부터 시작해서 색깔이 입혀짐/많이들 사용함*/
+        #photo{background-image: radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9)),url(../../images/unit_Special.jpg); height: 400px; background-size: contain;
+        }
+        
+        
+    </style>
+    
+    
+    
+    
+</head>
+<body>
+    <h1>Gradient Color</h1>
+    <div id="linear"></div>
+    <div id="toRight"></div>
+    <div id="multi"></div>
+    <div id="angle"></div>
+    <div id="rainbow"></div>
+    <div id="circle"></div>
+    <div id="shape"></div>
+    <div id="trans"></div>
+    <div id="photo">asdasdsadasdasd</div>
+    
+    
+    
+    
+</body>
+</html>

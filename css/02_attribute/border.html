@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid coral; padding: 5px;}
+/*
+            border-style: solid;
+            border-width: 2px;
+            border-color: coral
+*/
+                /*이렇게 나눠 쓰는게 정석이나 위에 처럼 한번에 적어넣어도 적용 된다*/
+    
+        p{padding: 10px; border: 3px /*solid 붙이느냐 안붙이냐에 따라 다름
+            안붙이면 디폴트값으로 표출되어짐/붙이면 정해진 픽셀, 색상으로 들어가짐*/}
+        p.dotted{border-style: dotted}
+        p.dashed{border-style: dashed}
+        p.double{border-style: double}
+        p.groove{border-style: groove}
+        p.inherit{border-style: inherit}
+        p.hidden{border-style: hidden}
+        p.inset{border-style: inset}
+        p.outset{border-style: outset}
+        p.ridge{border-style: ridge}
+        p.solid{border-style: solid}
+        p.mix{border-width: 1px 2px 3px 4px; 
+            border-style: solid dotted dashed inset}
+        p.sqare{border-style: solid; border-color: red blue
+        ; border-width: 25px; width: 0px} /*값이 네개면 시계방향, 2개면 앞이 상하 뒤가 좌우*/
+        p.left{border-left: 5px solid green}    
+        p.bottom{border-bottom: 5px solid green}    
+        p.button{border: 2px solid gold; width: 120px; height: 120px; border-radius: 20%;
+        text-align: center}
+        p.circle{border: 2px solid gold; width: 120px; height: 120px; border-radius: 20%;
+        line-height: 100px; text-align: center}
+        
+        
+    </style>
+    
+</head>
+<body>
+   <h2>border-style Property</h2>
+   
+   <div><p>하나의 속성에 여러 값을 한 번에 적용할 수고 있다 </p>
+   
+   <p class="dotted">dotted</p>
+   <p class="dashed">dashed</p>
+   <p class="double">double</p>
+   <p class="groove">groove</p>
+   <p class="inherit">inherit</p>
+   <p class="hidden">hidden</p> <!--hidden 사용 이유 : 상황별로 보이게 안보이게 하기위하여
+                                   none 은 아예 없애지는거/ 없기에 간격이 달라짐-->
+   <p class="inset">inset</p>
+   <p class="outset">outset</p>
+   <p class="ridge">ridge</p>
+   <p class="solid">solid</p>
+   <p class="mix">mix</p>
+   <p class="sqare"></p>
+   <p class="left">left bar border</p>
+   <p class="bottom">bottom bar border</p>
+   <p class="button">button</p>
+  <p class="circle">circle</p>
+   
+   
+   </div>
+   <!--p.어쩌구 치면 p class 지정 가능/# 하면 id-->
+   
+   
+    
+</body>
+</html>

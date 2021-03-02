@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h2>회원가입</h2>
+   <form action="" method="">
+       <fieldset>
+           <legend>회원가입</legend>
+           <ul>
+               <li><label for="name">name :</label>
+               <input type="text" name="name" id="name" autofocus>
+               </li>
+               
+                   <li><label for="natinality">natinality :</label>
+               <input type="text" name="natinality" id="natinality" value="korea" readonly>  <!--readonly : 값이 정해져 못 고치게 함-->
+               </li>
+               
+                 <li><label for="id">id :</label>
+               <input type="text" name="id" id="id" placeholder="영어 소문자 8자 이상">
+               </li>
+                   <li><label for="tel">tel :</label>
+               <input type="tel" name="tel" id="tel" placeholder="000-(1)111-2222" title="전화번호는 3-4-4 형식이여야 합니다"
+               pattern="\d{3}-\d{3,4}-\d{4}"> <!--pattern 을 넣어 조건이 안맞으면 제출이 안되게 설정함 / 이경우 타이틀 내용이 표출됨-->
+               </li>
+               <!--\d : 숫자라는 뜻 . \d{3,4} : 3~4 숫자 라는 것 , - : 글자로 취급됨 -->
+<!--
+               <li>
+                  <input type="pw" name="pw" id="pw" placeholder="영어, 숫자 포함 8자 이상 10자 이하" title="영어, 숫자 포함 8자 이상 10자 이하"
+                  pattern="/^(?=.[a-zA-Z])(?=)"> 
+               </li>
+-->
+               <input type="submit">
+               
+               
+           </ul>
+           
+       </fieldset>
+       
+   </form>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+</body>
+</html>

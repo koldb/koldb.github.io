@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            width: 800px;
+            background-color: pink;
+            border: 1px solid black;
+            overflow: hidden
+        }
+
+        h2 {
+            background-color: green;
+            border: 1px solid black;
+            margin: 50px
+        }
+
+        div.two {
+            background-color: gold;
+            margin: 30px 80px
+        }
+
+        div.three {
+            background-color: gold;
+            margin: 30px 80px 120px
+        }
+
+        div.out {
+            background-color: yellow; width: 600px; height: 200px; margin: auto
+        }/*오토면 센터로*/
+        #center{background-color: aquamarine; color: RED; width: 200px; margin: auto
+            
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <h2>margin: 값 1개인 경우 50px 상하좌우 모두 적용 됨</h2>
+    <div class="two">margin: 값이 2개 인 경우 : 상하 30px, 좌우 80px </div>
+    <!--margin 은 서로 겹쳐버려서 큰쪽껄로 적용된다/ 따로따로 적용하는 브라우저도 있었다-->
+    <div class="three">margin: 값 3개 인 경우 : 상 30px 좌우 80px 하 120px</div>
+    <div class="out">
+        <p id="center">
+            margin 속성을 이용하여 포함된 element를 수평 방향 중앙에 위치시킬 수 있다.
+            해당 박스 요소는 특정 넓이값을 가져야 하고 그 외의 영역을 좌우 마진 동일하게 적용함
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body></html>

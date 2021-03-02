@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function start() {
+            var down = document.getElementById("down");
+            var load = 0;
+            var timer = setInterval(function(){
+                load += 10;
+                down.Value=load;
+                if(load == 100){
+                    clearInterval(timer);
+                }
+            }, 1000);
+
+
+        }
+    </script>
+<!--
+
+<script>
+        function start(){
+            var down = document.getElementById("down");
+            var load = 0;
+            var timer = setInterval(function(){
+                load += 10;
+                down.value=load;
+                if(load == 100){
+                    clearInterval(timer);
+                }
+            }, 1000);
+        }
+    </script>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <h2>파일 다운로드</h2>
+    <progress value="0" max="100" id="down"></progress>
+    <hr>
+    <!--
+    현재 상황 : <meter min="0" max="100" value="20" title="%"> </meter>
+    -->
+    <input type="button" value="시작" onclick="start()">
+    <!--() 가 있다면 함수를 실행하라는 뜻-->
+
+
+
+
+
+
+
+</body></html>

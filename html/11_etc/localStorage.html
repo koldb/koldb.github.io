@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+   var list;
+   window.onload=function() {
+      var add = document.getElementById("add");
+      var remove = document.getElementById("remove");
+      add.addEventListener("click", addData);
+      remove.addEventListener("click", removeData);
+      init();
+   } 
+   function init() {
+      list = document.getElementById("list");
+      list.innerHTML = "";
+      for(var i =0; i < localStorage.length;i++) {
+         var key = localStorage.key(i);
+         list.options[list.options.length] =
+            new Option("키 : " + key + ", 값 : " +
+               localStorage[key], key);   
+      }
+   }
+   function addData() {      
+      var key = document.getElementById("key").value;
+      var value = document.getElementById("value").value;
+      localStorage[key] = value;
+      init();
+   }
+   function removeData() {
+      if (list.selectedIndex < 0)   {   return;   }
+      var selected = list.options[list.selectedIndex].value;
+      localStorage.removeItem(selected);
+      init();
+   }
+</script>
+    
+    
+    
+    
+</head>
+
+<body>
+    <select id="list" size="10"></select>
+    <fieldset>
+        <legend>로컬 스토리지 저장소</legend>
+        키 : <input type="text" id="key">
+        <p>
+            값 : <input type="text" id="value">
+        <p>
+            <input type="button" value="입력" id="add">
+        <p>
+            <input type="button" value="삭제" id="remove">
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+</body></html>
