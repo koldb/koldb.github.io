@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*h2 태그하면 h2 태그들은 다 해당됨
+        h2.(class로 잡은 값) 을 하면 해당 값만 적용 됨    
+        h2를 붙이면 우선순위가 높아진다 (class= .) 
+        */
+        .city {
+            background-color: blue;
+            padding: 5px;
+            color: aliceblue;
+            margin: 10px;
+        }
+
+        /*id 는 #(id 로 잡은 값) 을 넣어준다   #=id*/
+        #sun {
+            background-color: yellow;
+            padding: 5px;
+            color: black;
+        }
+
+        p {
+            padding: 5px;
+            background-color: green;
+            color: aliceblue;
+        }
+
+        .asia {
+            color: red;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>Class &amp; Id</h1>
+
+    <ul>
+        <li>Class : 페이지 내에서 특정 element들을 한 번에 선택하기 위한 명칭. 띄어쓰기로 여러 개 설정 가능</li>
+        <li>Id : 페이지 내에서 유일한 특정 element를 선택하기 위한 명칭</li>
+    </ul>
+
+    <!--둘다 선택하기 위한 태그 / id는 한페이지 안에 하나만 있는 것 / class 는 여러개를 가질 수 있다.-->
+    <hr>
+    <h2 class="city">London</h2>
+    <p>London us the capital of England</p>
+
+    <h2 class="city">Paris</h2>
+    <p>London us the capital of France</p>
+    <h2 class="city">Berlin</h2>
+    <p>London us the capital of Germany</p>
+
+    <!--class 안에 또 class 를 부여해줄수있다-->
+    <h2 class="city asia">Seoul</h2>
+    <p>London us the capital of Korea</p>
+    <h2 id="sun">sun</h2>
+    <p>London us the capital of Solor System</p>
+
+
+    <input type="button" onclick="erase()" value="night">
+    <input type="button" onclick="appear()" value="morning">
+
+    <script>
+     
+
+        function erase() {
+           var x = document.getElementById("sun");
+            x.style.display = "none";
+        }
+
+        function appear() {
+             var x = document.getElementById("sun");
+            x.style.display = "block";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body></html>
